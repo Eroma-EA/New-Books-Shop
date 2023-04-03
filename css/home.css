@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  height: 12px;
+  opacity: 0;
+  width: 12px;
+  background: #ffffffc4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffca298f;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+/* NAvigation Bar */
+header {
+  margin: 0;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid #000000;
+  box-shadow: 0px 0px 2px 0px;
+  backdrop-filter: blur(5px);
+}
+/* nav1 config */
+.nav1 {
+  gap: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lobster", cursive;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  color: rgb(255, 230, 141);
+}
+.nav1 > h1 {
+  text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black,
+    0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black,
+    0px 0px 1px black, 0px 0px 1px black;
+}
+.nav1 > img {
+  height: 100%;
+}
+
+/* nav2 config */
+.nav2 {
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+.Account{
+  font-size: 15px;
+}
+.SignOut{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.nav2 > ul {
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  width: 100%;
+}
+.nav2 > ul > li {
+  width: 70px;
+}
+.nav2 > ul > li > a {
+  transition: 0.3s;
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  width: 0px;
+  border-radius: 15px;
+}
+.nav2 > ul > li > a:hover {
+  background-color: rgb(255, 230, 182);
+  width: 90px;
+}
+.nav2 > ul > li:nth-child(4) > a:hover {
+  width: 120px;
+}
+.nav2 > ul > li:nth-child(5) > a:hover {
+  width: 120px;
+}
+.nav2 > ul > li > a > p {
+  position: relative;
+  box-shadow: 0px 0px 2px 0px;
+  border-radius: 15px;
+  padding: 5px 15px;
+  width: 90px;
+}
+.nav2 > ul > li:nth-child(4) > a > p {
+  padding: 5px 15px;
+  width: 120px;
+}
+.nav2 > ul > li:nth-child(5) > a > p {
+  padding: 5px 15px;
+  width: 120px;
+}
+.nav2 > ul > li:nth-child(5) {
+  margin-left: 30px;
+}
+.nav2 > ul > li:nth-child(6) {
+  margin-left: 60px;
+}
+
+.nav2 > ul > li:nth-child(6) > a:hover {
+  background-color: rgb(255, 179, 0);
+}
+.nav2 > ul > li:nth-child(6) {
+  background-color: rgb(255, 229, 180);
+  width: 90px;
+  border-radius: 15px;
+}
+/* Section 1   Maqala////////// */
+.backFon {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-image: url(../img/2f.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+.section1 {
+  margin: 0;
+
+  /* background: rgb(255, 219, 180); */
+  height: 400px;
+  display: flex;
+  padding: 20px;
+}
+.section1 > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  font-size: 25px;
+}
+.section1 > .text > h1,
+.section1 > .text > p {
+  color: aliceblue;
+  text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black,
+    0px 0px 2px black, 0px 0px 2px black;
+  width: 100%;
+  text-align: center;
+}
+.section1 > .text > .Maqala {
+  position: relative;
+  width: 100%;
+  text-align: start;
+  margin-left: 100px;
+  margin-top: 40px;
+  font-family: "Playball", cursive;
+}
+.MaqalaAnimation {
+  display: none;
+}
+.section1 > .text > .Maqala > img {
+  transform: translateY(70px) translateX(360px);
+  width: 50px;
+  text-align: end;
+  font-family: "Playball", cursive;
+}
+.section1 > .text > .Author {
+  width: 50%;
+  text-align: center;
+  font-family: "Playball", cursive;
+}
+
+/* section Images books */
+.section1 > .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  width: 50%;
+}
+
+/* imges cards settings */
+.section1 > .img > img {
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px 0px;
+  border: 1px solid;
+  position: absolute;
+  height: 300px;
+}
+.section1 > .img > img:hover {
+  transform: translateX(-70px) translateY(-5px);
+}
+.section1 > .img > img:nth-child(1) {
+  left: 0px;
+}
+.section1 > .img > img:nth-child(2) {
+  left: 100px;
+}
+.section1 > .img > img:nth-child(3) {
+  left: 200px;
+}
+.section1 > .img > img:nth-child(4) {
+  left: 300px;
+}
+.section1 > .img > img:nth-child(5) {
+  left: 400px;
+}
+.section1 > .img > img:nth-child(6) {
+  left: 500px;
+}
+.section1 > .img > img:nth-child(6):hover {
+  transform: translateX(0px);
+}
+
+/* Notifications */
+p > .fa-liked-Nav {
+  position: absolute;
+  color: rgb(173, 0, 0);
+  scale: 1;
+  top: -10px;
+  right: 0;
+  animation: animeHeart;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes animeHeart {
+  0% {
+    scale: 1.3;
+  }
+  5% {
+    scale: 1;
+  }
+  10% {
+    scale: 1.3;
+  }
+  15% {
+    scale: 1;
+  }
+}
+p > span {
+  transition: 0.3;
+  position: absolute;
+  background-color: aliceblue;
+  border: 1px solid black;
+  top: -5px;
+  color: rgb(173, 0, 0);
+  right: -5px;
+  font-size: 9px;
+  font-weight: 900;
+  border-radius: 100%;
+  padding: 2px 3px;
+}
+.fa-liked-Nav:hover {
+  text-shadow: none;
+}
+p > .fa-bask {
+  position: absolute;
+  color: rgb(101, 173, 0);
+  scale: 1;
+  top: -10px;
+  right: 0;
+  animation: animeBask;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes animeBask {
+  0% {
+    transform: translateX(5px);
+  }
+  5% {
+    transform: translateX(-5px);
+  }
+  10% {
+    transform: translateX(5px);
+  }
+  15% {
+    transform: translateX(-5px);
+  }
+
+  20% {
+    transform: translateX(0px);
+  }
+}

@@ -1,0 +1,41 @@
+.CardInfo {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.CardInfo > img {
+  width: 250px;
+  height: auto;
+  box-shadow: 0px 0px 2px 0px black;
+  border-radius: 15px;
+}
+.CardInfo > .card > img:hover {
+  scale: 1;
+  box-shadow: none;
+}
+
+.CardInfo .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(201, 143, 255, 0.549);
+  padding: 20px;
+  border-radius: 15px;
+  width: 60%;
+}
+.CardInfo .info p {
+  width: 100%;
+  height: auto;
+}
+.CardInfo > .info > .price {
+  background-color: rgb(214, 255, 181);
+  width: 140px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 10px 0px;
+}

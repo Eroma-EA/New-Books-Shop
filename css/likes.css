@@ -1,0 +1,14 @@
+.Main > .Cards > .gridCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: minmax(300px, auto);
+  grid-gap: 15px;
+}
+.LikedMain {
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 53px;
+  justify-content: center;
+}

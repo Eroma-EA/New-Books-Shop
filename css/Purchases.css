@@ -1,0 +1,16 @@
+.cardimg {
+  position: relative;
+  width: auto;
+  height: 80px;
+}
+.cardimg .img {
+    transition: 0.5s;
+  height: 80px;
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px 0px black;
+  border: 1px solid white;
+}
+.cardimg .img:hover {
+  transform: translateX(-6px);
+}
